@@ -93,7 +93,7 @@ body {
 main {
     margin: 0 20px 0 20px;
     clear: both;
-    position: relative;
+    position: flex;
     /* display: flex; */
 }
 
@@ -128,7 +128,7 @@ br {
 section {
     margin: 5px;
     /* clear: both; */
-    position: relative;
+    position: flex;
     display: inline;
 }
 
