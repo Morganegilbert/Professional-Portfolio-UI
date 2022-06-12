@@ -1,3 +1,11 @@
+/*Box Sytle Start*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*Box Sytle Stop*/
+
 /* Body Style Start*/
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -8,16 +16,97 @@ body {
 /* Body Style Stop*/
 
 /* Header Style Start*/
-header {
+.header {
     display: inline;
-    justify-self: unset;
-    align-items: baseline;
-    padding: auto;
+    width: auto;
+    justify-self: stretch;
+    align-items: inherit;
+    padding: 10px;
+    border: 5px slateblue;
     background-color: slategray;
-    color:  white;
+    color:  white; 
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .M .G {
+    color: rgb(198, 175, 218);
+}
+
+.header nav ul li {
+    display: inline;
+}
+
+.header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.header nav {
+    float: right;
+    margin:  7px 0;
+}
+
+.header a {
+    text-decoration: underline;
+    color: aliceblue;
+    padding-left: 45px;
 }
 /* Header Style Stop*/
 
-h1 {
-    font-size: 200%;
+/* Hero Style Start*/
+.hero {
+    height: 800px;
+    width: 100px;
+    margin-bottom: 25px;
+    background-image: url("../images/image-name.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
 }
+/* Hero Style Stop*/
+
+
+
+/* Footer Style Start */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+.footer nav ul li {
+    display: inline;
+}
+
+.footer nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.footer h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+    margin: 0;
+    display: inline;
+}
+
+.footer nav {
+    float: right;
+    margin:  7px 0;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: black;
+    padding-left: 45px;
+}
+/* Footer Style Stop */
