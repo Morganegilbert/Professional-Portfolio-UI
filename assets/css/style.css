@@ -4,6 +4,10 @@
     padding: 0;
     margin: 0;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 /* Box Sytle Stop */
 
 .container {
@@ -94,37 +98,30 @@ body {
 
 /* Main Style Start */
 
-.box {
-    grid-area: content;
-    position: relative;
-}
-
-.box-1, .box-3 {
-    grid-area: box-header-2, box-header-3;
-}
-
 .about-me {
+    margin: 0 0 20px 0;
+    width: 980px;
+    height: 1000px;
+    border: 2px solid #ccc;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: 180px;
-    grid-template-areas: ["box-1 box-2 box-2 box-2 box-2"], 
-    ["box-3 box-4 box-4 box-4 box-4"], 
-    ["box-3 box-5 box-5 box-6 box-6"], 
-    ["box-3 box-7 box-7 box-8 box-8"];
+    grid-gap: 20px;
+    grid-template-columns: 250px 350px 350px;
+    grid-template-rows: repeat(5, 150px);
+    /* justify-content: center; */
+    /* align-content: center; */
     background-color: slategray;
     color: black;
 }
-.about-me > .
 
 .box {
+    /* grid-area: content;
+    position: relative; */
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 10px;
     font-size: 150%;
 }
-
 
 /* .about-me {
     margin: 0 20px 0 20px;
@@ -144,6 +141,8 @@ body {
     border-right-color: aqua;
     border-right-style: solid;
     float: left;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 /* br {
@@ -151,13 +150,46 @@ body {
     margin: 20px;
 } */
 
-/* .about-me-paragraph {
+.box-2 {
     margin: 10px;
     text-align: left;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-right: 70px;
-} */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    float: left;
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.box-3 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 6;
+}
+
+.box-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.box-5 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.box-6 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.box-7 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.box-8 {
+    grid-column: 3;
+    grid-row: 5;
+}
 
 /* Section Style Start */
 /* section {
@@ -253,7 +285,7 @@ body {
     margin-top: 20px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: inline-flex;
+    display: inline;
     position: relative;
 }
 
