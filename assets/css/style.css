@@ -6,6 +6,9 @@
 }
 /* Box Sytle Stop */
 
+.container {
+    
+}
 /* Body Style Start */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -90,14 +93,46 @@ body {
 
 
 /* Main Style Start */
-main {
+
+.box {
+    grid-area: content;
+    position: relative;
+}
+
+.box-1, .box-3 {
+    grid-area: box-header-2, box-header-3;
+}
+
+.about-me {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 180px;
+    grid-template-areas: ["box-1 box-2 box-2 box-2 box-2"], 
+    ["box-3 box-4 box-4 box-4 box-4"], 
+    ["box-3 box-5 box-5 box-6 box-6"], 
+    ["box-3 box-7 box-7 box-8 box-8"];
+    background-color: slategray;
+    color: black;
+}
+.about-me > .
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+}
+
+
+/* .about-me {
     margin: 0 20px 0 20px;
     clear: both;
     position: flex;
-    /* display: flex; */
-}
+} */
 
-aside h3 {
+.box-1 {
     height: 150px;
     width: 200px;
     margin: 10px;
@@ -111,33 +146,31 @@ aside h3 {
     float: left;
 }
 
-br {
+/* br {
     display: inline;
     margin: 20px;
-}
+} */
 
-.about-me-paragraph {
+/* .about-me-paragraph {
     margin: 10px;
     text-align: left;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-right: 70px;
-}
+} */
 
 /* Section Style Start */
-section {
+/* section {
     margin: 5px;
-    /* clear: both; */
     position: flex;
     display: inline;
-}
+} */
 
-aside h4 {
+/* aside h4 {
     height: 750px;
     width: 200px;
     margin: 10px;
     padding: 0px 10px 0px 40px;
-    /* flex: 1; */
     text-align: right;
     font-size: 40px;
     border-right: 5px;
@@ -145,9 +178,9 @@ aside h4 {
     border-right-style: solid;
     float: left;
     position: static;
-}
+} */
 
-.box1 {
+/* .box1 {
     height: 315px;
     width: 630px;
     padding: 20px;
@@ -157,16 +190,16 @@ aside h4 {
     border-style: solid;
     float: left;
     top: -20px;
-}
+} */
 
-#surf-report {
+/* #surf-report {
     background-color: lightblue;
     margin: 5px;
     padding: 5px;
     text-align: center;
-}
+} */
 
-.box2 {
+/* .box2 {
     height: 200px;
     width: 315px;
     padding: 20px;
@@ -176,9 +209,9 @@ aside h4 {
     border-style: solid;
     float: left;
     align-self: flex-start;
-}
+} */
 
-.box3 {
+/* .box3 {
     height: 200px;
     width: 315px;
     padding: 20px;
@@ -187,9 +220,9 @@ aside h4 {
     border-color: aqua;
     border-style: solid;
     float: left;
-}
+} */
 
-.box4 {
+/* .box4 {
     height: 200px;
     width: 315px;
     padding: 20px;
@@ -198,8 +231,9 @@ aside h4 {
     border-color: aqua;
     border-style: solid;
     float: left;
-}
-.box5 {
+} */
+
+/* .box5 {
     height: 200px;
     width: 315px;
     padding: 20px;
@@ -208,7 +242,7 @@ aside h4 {
     border-color: aqua;
     border-style: solid;
     float: left;
-}
+} */
 
 
 /* Main Style Stop */
