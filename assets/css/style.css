@@ -1,0 +1,23 @@
+/* Body Style Start*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    line-height: normal;
+}
+/* Body Style Stop*/
+
+/* Header Style Start*/
+header {
+    display: inline;
+    justify-self: unset;
+    align-items: baseline;
+    padding: auto;
+    background-color: slategray;
+    color:  white;
+}
+/* Header Style Stop*/
+
+h1 {
+    font-size: 200%;
+}
