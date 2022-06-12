@@ -1,21 +1,21 @@
-/*Box Sytle Start*/
+/* Box Sytle Start */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-/*Box Sytle Stop*/
+/* Box Sytle Stop */
 
-/* Body Style Start*/
+/* Body Style Start */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* display: flex; */
     /* flex-direction: row; */
     line-height: normal;
 }
-/* Body Style Stop*/
+/* Body Style Stop */
 
-/* Header Style Start*/
+/* Header Style Start */
 .header {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -56,10 +56,15 @@ body {
     text-decoration: underline;
     color: aliceblue;
     padding-left: 15px;
+    cursor: pointer;
 }
-/* Header Style Stop*/
 
-/* Hero Style Start*/
+.header a:hover {
+    background-color: rgba(25, 29, 32, 0.26);
+}
+/* Header Style Stop */
+
+/* Hero Style Start */
 .hero {
     height: 200px;
     width: auto;
@@ -80,8 +85,62 @@ body {
     top: 37%;
     left: 90%;
 }
-/* Hero Style Stop*/
+/* Hero Style Stop */
 
+
+/* Main Style Start */
+main {
+    margin: 0 20px 0 20px;
+    clear: both;
+    position: relative;
+    display: flex;
+}
+
+.about-me h3 {
+    height: 150px;
+    width: 200px;
+    margin: 10px;
+    padding-left: 40px;
+    padding-right: 5px;
+    border-style: right solid 10px;
+    border-color: slategray;
+    font-size: 40px;
+    /* float: left; */
+    text-align: right;
+}
+
+.hr {
+    padding: 2px;
+    background-color: slategray;
+}
+.about-me p {
+    margin: 10px;
+    text-align: left;
+    
+}
+/* Main Style Stop */
+
+/* Section Style Start */
+section {
+    margin: 20px 40px;
+    clear: both;
+    position: relative;
+    display: block;
+    /* z-index: 3; */
+
+}
+
+section work h4 {
+    height: 150px;
+    width: 200px;
+    margin: 5px;
+    padding-left: 40px;
+    padding-right: 10px;
+    border-right: 5px;
+    border-color: slategray;
+    font-size: 40px;
+    text-align: right;
+}
 
 
 /* Footer Style Start */
@@ -91,7 +150,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
     position: relative;
-    top: 100%;
 }
 
 .footer h1 {
