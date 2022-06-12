@@ -8,7 +8,7 @@
 
 /* Body Style Start*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* display: flex; */
     /* flex-direction: row; */
     line-height: normal;
@@ -20,7 +20,7 @@ body {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: slategray;
-    color:  white;     
+    color:  black;     
     /* display: inline;
     justify-self: stretch;
     align-items: inherit; */
@@ -28,12 +28,17 @@ body {
 
 .header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 40px;
+    padding: 0px 20px 5px 40px;
+    background-color: rgba(255, 255, 255, 0.507);
 }
 
-.header h1 .M .G {
-    .span:color: slateblue;
-    color: slateblue;
+.header h1 .M {
+    color: rgb(49, 63, 109);
+}
+
+.header h1 .G {
+    color: rgb(49, 63, 109);
 }
 
 .header nav ul li {
@@ -45,7 +50,6 @@ body {
     font-weight: lighter;
     font-size: 22px;
     float: right;
-
 }
 
 .header a {
@@ -65,6 +69,17 @@ body {
     background-position: center;
     position: relative;
 }
+
+.hero a {
+    margin: 15px;
+    padding: 8px;
+    color: white;
+    background-color: slategray;
+    background-position: center;
+    position: sticky;
+    top: 37%;
+    left: 90%;
+}
 /* Hero Style Stop*/
 
 
@@ -75,6 +90,8 @@ body {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
+    position: relative;
+    top: 100%;
 }
 
 .footer h1 {
@@ -85,15 +102,14 @@ body {
     display: inline;
 }
 
-.footer nav {
-    margin:  7px 0;
+.footer nav ul li {
+    display: inline;
 }
 
-.footer a {
-    text-decoration: underline;
-    color: black;
-    padding-left: 45px;
-    display: inline-block;
-
+.footer nav {
+    margin: 10px 30px;
+    font-weight: lighter;
+    font-size: 22px;
+    float: right;
 }
 /* Footer Style Stop */
