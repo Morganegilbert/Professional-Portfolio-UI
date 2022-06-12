@@ -9,22 +9,21 @@
 /* Body Style Start*/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     line-height: normal;
 }
 /* Body Style Stop*/
 
 /* Header Style Start*/
 .header {
-    display: inline;
-    width: auto;
-    justify-self: stretch;
-    align-items: inherit;
     padding: 10px;
-    border: 5px slateblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: slategray;
-    color:  white; 
+    color:  white;     
+    /* display: inline;
+    justify-self: stretch;
+    align-items: inherit; */
 }
 
 .header h1 {
@@ -33,41 +32,38 @@ body {
 }
 
 .header h1 .M .G {
-    color: rgb(198, 175, 218);
+    .span:color: slateblue;
+    color: slateblue;
 }
 
 .header nav ul li {
     display: inline;
 }
 
-.header nav ul li a {
-    margin: 0 30px;
+.header nav {
+    margin: 10px 30px;
     font-weight: lighter;
     font-size: 22px;
-}
-
-.header nav {
     float: right;
-    margin:  7px 0;
+
 }
 
 .header a {
     text-decoration: underline;
     color: aliceblue;
-    padding-left: 45px;
+    padding-left: 15px;
 }
 /* Header Style Stop*/
 
 /* Hero Style Start*/
 .hero {
-    height: 800px;
-    width: 100px;
+    height: 200px;
+    width: auto;
     margin-bottom: 25px;
-    background-image: url("../images/image-name.jpg");
+    background-image: url("../images/gray-shade.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
-
 }
 /* Hero Style Stop*/
 
@@ -78,17 +74,7 @@ body {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: justify;
-}
-
-.footer nav ul li {
-    display: inline;
-}
-
-.footer nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
+    display: inline-block;
 }
 
 .footer h1 {
@@ -100,7 +86,6 @@ body {
 }
 
 .footer nav {
-    float: right;
     margin:  7px 0;
 }
 
@@ -108,5 +93,7 @@ body {
     text-decoration: underline;
     color: black;
     padding-left: 45px;
+    display: inline-block;
+
 }
 /* Footer Style Stop */
