@@ -94,7 +94,7 @@ main {
     margin: 0 20px 0 20px;
     clear: both;
     position: relative;
-    display: flex;
+    /* display: flex; */
 }
 
 aside h3 {
@@ -108,76 +108,122 @@ aside h3 {
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
-    /* float: left; */
+    float: left;
 }
 
-
-.hr {
-    padding: 2px;
-    background-color: slategray;   
+br {
+    display: inline;
+    margin: 20px;
 }
 
 .about-me-paragraph {
     margin: 10px;
     text-align: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 70px;
 }
 
 /* Section Style Start */
 section {
     margin: 5px;
-    clear: both;
+    /* clear: both; */
     position: relative;
-    display: flex;
+    display: inline;
 }
 
 aside h4 {
-    height: 150px;
+    height: 750px;
     width: 200px;
     margin: 10px;
     padding: 0px 10px 0px 40px;
-    flex: 1;
+    /* flex: 1; */
     text-align: right;
     font-size: 40px;
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
-    /* float: left; */
+    float: left;
+    position: static;
 }
 
-
-div a surf-report {
-    height: 200px;
-    width: 75%;
-    margin: 10px;
+.box1 {
+    height: 315px;
+    width: 630px;
     padding: 20px;
     background-color: slategray;
     border: 5px;
     border-color: aqua;
     border-style: solid;
+    float: left;
+    top: -20px;
 }
 
-section div {
+#surf-report {
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.box2 {
     height: 200px;
-    width: 200px;
-    margin: 10px;
+    width: 315px;
     padding: 20px;
     background-color: slategray;
     border: 5px;
     border-color: aqua;
     border-style: solid;
+    float: left;
+    align-self: flex-start;
 }
+
+.box3 {
+    height: 200px;
+    width: 315px;
+    padding: 20px;
+    background-color: slategray;
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    float: left;
+}
+
+.box4 {
+    height: 200px;
+    width: 315px;
+    padding: 20px;
+    background-color: slategray;
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    float: left;
+}
+.box5 {
+    height: 200px;
+    width: 315px;
+    padding: 20px;
+    background-color: slategray;
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    float: left;
+}
+
+
 /* Main Style Stop */
 
 /* Footer Style Start */
 .footer {
     padding: 30px;
+    margin-top: 20px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-flex;
     position: relative;
 }
 
-aside h4 {
+aside h5 {
     height: 150px;
     width: 200px;
     margin: 10px;
@@ -188,7 +234,6 @@ aside h4 {
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
-    /* float: left; */
 }
 
 .footer nav {
