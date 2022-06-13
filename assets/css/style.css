@@ -98,14 +98,14 @@ body {
 
 /* Main Style Start */
 
-.about-me {
+.main {
     margin: 0 0 20px 0;
-    width: 980px;
+    width: 100%;
     height: 1000px;
     border: 2px solid #ccc;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 250px 350px 350px;
+    grid-template-columns: 25% 350px 350px;
     grid-template-rows: repeat(5, 150px) 200px;
     /* justify-content: center; */
     /* align-content: center; */
@@ -282,7 +282,27 @@ body {
 /* Main Style Stop */
 
 /* Footer Style Start */
+/* .footer { */
+    /* padding: 30px;
+    margin-top: 20px; */
+    /* clear: both; */
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    /* display: inline-block; */
+    /* position: relative; */
+/* } */
+
 .box-9 {
+    height: 150px;
+    width: 200px;
+    margin: 10px;
+    padding: 0px 10px 0px 40px;
+    flex: 1;
+    text-align: right;
+    font-size: 40px;
+    background-color: wheat;
+    border-right: 5px;
+    border-right-color: aqua;
+    border-right-style: solid;
     grid-column: 1;
     grid-row: 6;
 }
@@ -292,32 +312,34 @@ body {
     grid-row: 6;
 }
 
-.footer {
-    padding: 30px;
-    margin-top: 20px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: inline;
-    position: relative;
+.box-10 nav {
+    /* margin: 10px 30px; */
+    font-weight: lighter;
+    font-size: 22px;
+    /* float: right; */
 }
 
-aside h5 {
-    height: 150px;
-    width: 200px;
-    margin: 10px;
-    padding: 0px 10px 0px 40px;
-    flex: 1;
-    text-align: right;
-    font-size: 40px;
-    border-right: 5px;
-    border-right-color: aqua;
-    border-right-style: solid;
-}
-
-.footer nav {
+.box-10 nav {
     margin: 10px 30px;
     font-weight: lighter;
     font-size: 22px;
     float: right;
+    display: flex;
+    position: relative;
+}
+
+/* .box-10 nav ul li {
+    display: ;
+} */
+
+.box-10 a {
+    text-decoration: underline;
+    color: black;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.box-10 a:hover {
+    background-color: rgba(204, 205, 206, 0.26);
 }
 /* Footer Style Stop */
