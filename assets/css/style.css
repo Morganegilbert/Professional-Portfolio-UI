@@ -105,7 +105,7 @@ body {
     border: 2px solid #ccc;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 25% 50% 50%;
+    grid-template-columns: 25% 37.5% 37.5%;
     grid-template-rows: repeat(5, 150px) 200px;
     /* justify-content: center; */
     /* align-content: center; */
@@ -153,13 +153,17 @@ body {
 .box-2 {
     margin: 10px;
     text-align: left;
+    text-overflow: clip;
     padding-bottom: 5px;
     padding-top: 5px;
     padding-right: 5px;
     float: left;
     grid-column: 2 / 4;
     grid-row: 1;
+    word-wrap: break-word;
+    width: 500px;
 }
+
 
 .box-3 {
     grid-column: 1 / 1;
