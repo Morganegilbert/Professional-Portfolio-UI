@@ -106,7 +106,7 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 250px 350px 350px;
-    grid-template-rows: repeat(5, 150px);
+    grid-template-rows: repeat(5, 150px) 200px;
     /* justify-content: center; */
     /* align-content: center; */
     background-color: slategray;
@@ -190,6 +190,8 @@ body {
     grid-column: 3;
     grid-row: 5;
 }
+
+
 
 /* Section Style Start */
 /* section {
@@ -280,6 +282,16 @@ body {
 /* Main Style Stop */
 
 /* Footer Style Start */
+.box-9 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.box-10 {
+    grid-column: 2 / 3;
+    grid-row: 6;
+}
+
 .footer {
     padding: 30px;
     margin-top: 20px;
