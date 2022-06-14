@@ -3,17 +3,29 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    flex: 1 100%;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+@media all and (min-width: 800px) {
+    .main { flex: 3 0px; }
+    .box-1 { order: 1; }
+    .box-2 { order: 2; }
+    .box-3 { order: 3; }
+    .box-4 { order: 4; }
+    .box-5 { order: 5; }
+    .box-6 { order: 6; }
+    .box-7 { order: 7; }
+    .box-8 { order: 8; }
+    .box-9 { order: 9; }
+    .box-10 { order: 10; }
+
 }
-/* Box Sytle Stop */
 
 /* Body Style Start */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* display: flex; */
+    /* flex-flow: row wrap; */
     /* flex-direction: row; */
     line-height: normal;
 }
@@ -25,9 +37,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: slategray;
     color:  black;     
-    /* display: inline;
-    justify-self: stretch;
-    align-items: inherit; */
+    /* flex: static; */
 }
 
 .header h1 {
@@ -46,15 +56,17 @@ body {
 }
 
 .header nav ul li {
-    display: inline;
+    display: inline-flex;
+    /* flex-direction: left, bottom; */
 }
 
 .header nav {
     margin: 10px 30px;
     font-weight: lighter;
     font-size: 22px;
-    float: right;
-    display: flex;
+    float: right; 
+
+    /* display: flex; */
 }
 
 .header a {
@@ -102,8 +114,10 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 19.25% 34% 34% 9.25%;
-    grid-template-rows: 200px repeat(4, 150px) 200px;
+    grid-template-rows: 200px repeat(autofit, 4, 150px) 200px;
     color: black;
+    /* flex-wrap: wrap;
+    flex: auto; */
 }
 
 .box {
@@ -122,7 +136,7 @@ body {
 } */
 
 .box-1 {
-
+    /* flex: 1; */
     margin: 10px;
     padding: 0 10px 0 25%;
     text-align: right;
@@ -161,7 +175,7 @@ body {
 .box-3 {
     margin: 10px;
     padding: 0 10px 0 0;
-    flex: 1;
+    /* flex: 1; */
     text-align: right;
     font-size: 40px;
     font-weight: bold;
@@ -218,106 +232,6 @@ body {
     border-color: aqua;
     border-style: solid;
 }
-
-
-
-/* Section Style Start */
-/* section {
-    margin: 5px;
-    position: flex;
-    display: inline;
-} */
-
-/* aside h4 {
-    height: 750px;
-    width: 200px;
-    margin: 10px;
-    padding: 0px 10px 0px 40px;
-    text-align: right;
-    font-size: 40px;
-    border-right: 5px;
-    border-right-color: aqua;
-    border-right-style: solid;
-    float: left;
-    position: static;
-} */
-
-/* .box1 {
-    height: 315px;
-    width: 630px;
-    padding: 20px;
-    background-color: slategray;
-    border: 5px;
-    border-color: aqua;
-    border-style: solid;
-    float: left;
-    top: -20px;
-} */
-
-/* #surf-report {
-    background-color: lightblue;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-} */
-
-/* .box2 {
-    height: 200px;
-    width: 315px;
-    padding: 20px;
-    background-color: slategray;
-    border: 5px;
-    border-color: aqua;
-    border-style: solid;
-    float: left;
-    align-self: flex-start;
-} */
-
-/* .box3 {
-    height: 200px;
-    width: 315px;
-    padding: 20px;
-    background-color: slategray;
-    border: 5px;
-    border-color: aqua;
-    border-style: solid;
-    float: left;
-} */
-
-/* .box4 {
-    height: 200px;
-    width: 315px;
-    padding: 20px;
-    background-color: slategray;
-    border: 5px;
-    border-color: aqua;
-    border-style: solid;
-    float: left;
-} */
-
-/* .box5 {
-    height: 200px;
-    width: 315px;
-    padding: 20px;
-    background-color: slategray;
-    border: 5px;
-    border-color: aqua;
-    border-style: solid;
-    float: left;
-} */
-
-
-/* Main Style Stop */
-
-/* Footer Style Start */
-/* .footer { */
-    /* padding: 30px;
-    margin-top: 20px; */
-    /* clear: both; */
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    /* display: inline-block; */
-    /* position: relative; */
-/* } */
 
 .box-9 {
     margin: 10px;
