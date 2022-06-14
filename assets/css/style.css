@@ -1,25 +1,10 @@
 /* Box Sytle Start */
-*{
+/* *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     flex: 1 100%;
-}
-
-@media all and (min-width: 800px) {
-    .main { flex: 3 0px; }
-    .box-1 { order: 1; }
-    .box-2 { order: 2; }
-    .box-3 { order: 3; }
-    .box-4 { order: 4; }
-    .box-5 { order: 5; }
-    .box-6 { order: 6; }
-    .box-7 { order: 7; }
-    .box-8 { order: 8; }
-    .box-9 { order: 9; }
-    .box-10 { order: 10; }
-
-}
+} */
 
 /* Body Style Start */
 body {
@@ -36,12 +21,16 @@ body {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: slategray;
+    background-size: cover;
     color:  black;     
     /* flex: static; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .header h1 {
-    display: inline-block;
+    /* display: inline-block; */
+    justify-content: flex-start;
     font-size: 40px;
     padding: 0px 20px 5px 40px;
     background-color: rgba(255, 255, 255, 0.507);
@@ -55,18 +44,17 @@ body {
     color: rgb(49, 63, 109);
 }
 
-.header nav ul li {
+.header nav ul a {
     display: inline-flex;
-    /* flex-direction: left, bottom; */
+    justify-content: flex-end;
+    flex-direction: left, bottom;
 }
 
 .header nav {
     margin: 10px 30px;
     font-weight: lighter;
     font-size: 22px;
-    float: right; 
-
-    /* display: flex; */
+    /* float: right;  */
 }
 
 .header a {
@@ -79,6 +67,14 @@ body {
 .header a:hover {
     background-color: rgba(204, 205, 206, 0.26);
 }
+
+.resume:hover:before {
+    content: "No ";
+}
+
+.resume span:hover {
+    display: none;
+}
 /* Header Style Stop */
 
 /* Hero Style Start */
@@ -90,6 +86,12 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    max-height: auto;
+
+    /* Grid Styling for Hero */
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .hero a {
@@ -97,10 +99,28 @@ body {
     padding: 8px;
     color: white;
     background-color: slategray;
-    background-position: center;
-    position: sticky;
-    top: 37%;
-    left: 90%;
+    position: relative;
+    left: 35%;
+    top: 35%;
+    width: fit-content;
+}
+
+.hero img {
+    position: relative;
+    top: 5%;
+    left: 1%;
+    margin-bottom: 25px;
+    max-height: 150px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 5%;
+}
+
+.float-right {
+    float: right;
+    margin-left: 5%;
 }
 /* Hero Style Stop */
 
@@ -111,10 +131,11 @@ body {
     margin: 0;
     width: 100%;
     height: 1000px;
-    display: grid;
+    display: grid; 
+    justify-content: center;
     grid-gap: 20px;
     grid-template-columns: 19.25% 34% 34% 9.25%;
-    grid-template-rows: 200px repeat(autofit, 4, 150px) 200px;
+    grid-template-rows: 200px repeat(autofill, 150px) 200px;
     color: black;
     /* flex-wrap: wrap;
     flex: auto; */
@@ -127,13 +148,9 @@ body {
     border-radius: 5px;
     padding: 10px;
     font-size: 150%;
+    align-items: center;
+    position: relative;
 }
-
-/* .about-me {
-    margin: 0 20px 0 20px;
-    clear: both;
-    position: flex;
-} */
 
 .box-1 {
     /* flex: 1; */
@@ -191,46 +208,54 @@ body {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 2 / 4;
-    background-color: slategray;
+    background-image: url("../images/orange.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
+    max-width: none;
 }
 
 .box-5 {
     grid-column: 3;
     grid-row: 4;
-    background-color: slategray;
+    background-image: url("../images/aqua.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
+    min-width: 400px;
+
 }
 
 .box-6 {
     grid-column: 2;
     grid-row: 4;
-    background-color: slategray;
+    background-image: url("../images/pink.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
+    min-width: 400px;
+
 }
 
 .box-7 {
     grid-column: 2;
     grid-row: 5;
-    background-color: slategray;
+    background-image: url("../images/goldenrod.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
+    min-width: 400px;
+
 }
 
 .box-8 {
     grid-column: 3;
     grid-row: 5;
-    background-color: slategray;
+    background-image: url("../images/lavender.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
+    min-width: 400px;
 }
 
 .box-9 {
