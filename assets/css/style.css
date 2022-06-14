@@ -337,6 +337,8 @@ body {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 6;
+    position: relative;
+    padding-top: 4%;
 }
 
 .box-10 nav {
@@ -348,25 +350,26 @@ body {
 
 .box-10 li {
     display: inline;
-    /* float: none; */
+    padding:  6%;
+    float: none;
     /* top: 6%; */
+    position: sticky;
+    bottom: 37%;
 }
 .box-10 a {
     text-decoration: underline;
     color: black;
-    padding:  6%;
     cursor: pointer;
-    /* text-align-last: justify; */
-    /* margin: 6% 10px 10px 0; */
+    padding: 2px 4px;
     font-weight: lighter;
     font-size: 15px;
     float: middle;
     /* display: inline; */
-    position: relative;
+
 }
 
 
 .box-10 li a:hover {
-    background-color: rgba(204, 205, 206, 0.26);
+    background-color: rgba(67, 69, 70, 0.26);
 }
 /* Footer Style Stop */
