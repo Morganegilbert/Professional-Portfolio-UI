@@ -10,9 +10,6 @@
 }
 /* Box Sytle Stop */
 
-.container {
-    
-}
 /* Body Style Start */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -102,19 +99,16 @@ body {
     margin: 0;
     width: 100%;
     height: 1000px;
-    border: 2px solid #ccc;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 18.25% 30% 30% 18.25%;
-    grid-template-rows: repeat(5, 150px) 200px;
-    /* justify-content: center; */
-    /* align-content: center; */
+    grid-template-columns: 19.25% 34% 34% 9.25%;
+    grid-template-rows: 200px repeat(4, 150px) 200px;
     color: black;
 }
 
 .box {
-    /* grid-area: content;
-    position: relative; */
+    grid-area: content;
+    position: relative;
     color: #fff;
     border-radius: 5px;
     padding: 10px;
@@ -130,10 +124,10 @@ body {
 .box-1 {
 
     margin: 10px;
-    padding: 0 10px 0 0;
-    flex: 1;
+    padding: 0 10px 0 25%;
     text-align: right;
     font-size: 40px;
+    font-weight: bold;
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
@@ -148,18 +142,18 @@ body {
 } */
 
 .box-2 {
-    margin: 10px;
+    /* margin: 10px; */
     text-align: left;
     text-overflow: clip;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     padding-top: 5px;
-    padding-right: 5px;
+    /* padding-right: 5px; */
     /* float: left; */
-    grid-column: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row: 1;
     word-wrap: break-word;
-    width: 500px;
-    background-color: slategray;
+    /* width: 500px; */
 
 }
 
@@ -170,6 +164,7 @@ body {
     flex: 1;
     text-align: right;
     font-size: 40px;
+    font-weight: bold;
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
@@ -183,35 +178,45 @@ body {
     grid-column-end: 4;
     grid-row: 2 / 4;
     background-color: slategray;
-
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
 }
 
 .box-5 {
     grid-column: 3;
     grid-row: 4;
     background-color: slategray;
-
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
 }
 
 .box-6 {
     grid-column: 2;
     grid-row: 4;
     background-color: slategray;
-
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
 }
 
 .box-7 {
     grid-column: 2;
     grid-row: 5;
     background-color: slategray;
-
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
 }
 
 .box-8 {
     grid-column: 3;
     grid-row: 5;
     background-color: slategray;
-
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
 }
 
 
@@ -316,10 +321,11 @@ body {
 
 .box-9 {
     margin: 10px;
-    padding: 0px 10px 0px 40px;
-    flex: 1;
+    padding: 0px 10px 0px 0px;
+    /* flex: 1; */
     text-align: right;
     font-size: 40px;
+    font-weight: bold;
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
@@ -328,40 +334,39 @@ body {
 }
 
 .box-10 {
-    grid-column: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row: 6;
 }
 
 .box-10 nav {
-    /* margin: 10px 30px; */
+    margin: 10px 30px;
     font-weight: lighter;
     font-size: 22px;
     /* float: right; */
-}
-
-/* .box-10 nav ul li {
-    display: ;
-} */
-
-.box-10 a {
-    text-decoration: underline;
-    color: black;
-    padding: 0 10px 0 10px;
-    cursor: pointer;
-    text-align-last: justify;
-    margin: 10px 10px;
-    font-weight: lighter;
-    font-size: 22px;
-    /* float: right; */
-    /* display: inline; */
-    /* position: relative; */
 }
 
 .box-10 li {
     display: inline;
-    float: right;
+    /* float: none; */
+    /* top: 6%; */
 }
-.box-10 a:hover {
+.box-10 a {
+    text-decoration: underline;
+    color: black;
+    padding:  6%;
+    cursor: pointer;
+    /* text-align-last: justify; */
+    /* margin: 6% 10px 10px 0; */
+    font-weight: lighter;
+    font-size: 15px;
+    float: middle;
+    /* display: inline; */
+    position: relative;
+}
+
+
+.box-10 li a:hover {
     background-color: rgba(204, 205, 206, 0.26);
 }
 /* Footer Style Stop */
