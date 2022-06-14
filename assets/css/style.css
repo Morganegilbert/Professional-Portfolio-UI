@@ -1,10 +1,10 @@
 /* Box Sytle Start */
-/* *{
-    box-sizing: border-box;
+*{
+    /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
-    flex: 1 100%;
-} */
+    /* flex: 1 100%; */
+}
 
 /* Body Style Start */
 body {
@@ -26,6 +26,7 @@ body {
     /* flex: static; */
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -85,24 +86,24 @@ body {
     background-image: url("../images/gray-shade.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
+    /* position: relative; */
     max-height: auto;
 
-    /* Grid Styling for Hero */
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /* flex Styling for Hero */
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero a {
     margin: 15px;
     padding: 8px;
     color: white;
+    font-size: 20;
     background-color: slategray;
-    position: relative;
     left: 35%;
     top: 35%;
     width: fit-content;
+    height: fit-content;
 }
 
 .hero img {
@@ -113,14 +114,17 @@ body {
     max-height: 150px;
 }
 
-.float-left {
-    float: left;
+.flex-left {
+    /* float: left; */
     margin-right: 5%;
+    justify-content: flex-start;
 }
 
-.float-right {
-    float: right;
+.flex-right {
+    /* float: right; */
+    justify-content: right, bottom;
     margin-left: 5%;
+    position: static;
 }
 /* Hero Style Stop */
 
