@@ -1,6 +1,6 @@
 /* Box Sytle Start */
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     /* flex: 1 100%; */
@@ -9,9 +9,10 @@
 /* Body Style Start */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* display: flex; */
+    display: flex;
+    min-height: 100vh;
     /* flex-flow: row wrap; */
-    /* flex-direction: row; */
+    flex-direction: column;
     line-height: normal;
 }
 /* Body Style Stop */
@@ -19,13 +20,14 @@ body {
 /* Header Style Start */
 .header {
     padding: 10px;
+    width: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: slategray;
     background-size: cover;
     color:  black;     
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: column;
 }
 
 .header h1 {
@@ -55,7 +57,7 @@ body {
 .header nav {
     margin: 10px 30px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 25px;
     /* float: right;  */
 }
 
@@ -155,7 +157,7 @@ body {
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
-    width: 50%;
+    width: 20%;
 }
 
 .about-me {
@@ -176,19 +178,44 @@ body {
     line-height: 1.5;
     color: black;
     flex: 2 80%;
+    flex-grow: inherit;
 }
 
 .about-me h2 { 
     flex: 1 20%;
+    flex-shrink: inherit;
 }
 
 .about {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.work {
+    width: ;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    border-right: 5px;
+    border-right-color: aqua;
+    border-right-style: solid;
+}
+
+.work h3 {
+    flex: 1 20%;
+    flex-shrink: inherit;
+}
+
+.subsection1-title {
+    flex: 12;
+}
+
+.subsection2-title {
+    flex: 6;
 }
 
 /* .box {
@@ -222,27 +249,27 @@ body {
     margin: 20px;
 } */
 
-.box-2 {
-    /* margin: 10px; */
+/* .box-2 {
+    margin: 10px;
     text-align: left;
     text-overflow: clip;
-    /* padding-bottom: 5px; */
+    padding-bottom: 5px;
     padding-top: 5px;
-    /* padding-right: 5px; */
-    /* float: left; */
+    padding-right: 5px;
+    float: left;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 1;
     word-wrap: break-word;
-    /* width: 500px; */
+    width: 500px;
 
-}
+} */
 
 
-.box-3 {
+/* .box-3 {
     margin: 10px;
     padding: 0 10px 0 0;
-    /* flex: 1; */
+    flex: 1;
     text-align: right;
     font-size: 40px;
     font-weight: bold;
@@ -252,9 +279,9 @@ body {
     float: left;
     grid-column: 1 / 1;
     grid-row: 2 / 6;
-}
+} */
 
-.box-4 {
+/* .box-4 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 2 / 4;
@@ -263,9 +290,9 @@ body {
     border-color: aqua;
     border-style: solid;
     max-width: none;
-}
+} */
 
-.box-5 {
+/* .box-5 {
     grid-column: 3;
     grid-row: 4;
     background-image: url("../images/aqua.jpg");
@@ -274,9 +301,9 @@ body {
     border-style: solid;
     min-width: 400px;
 
-}
+} */
 
-.box-6 {
+/* .box-6 {
     grid-column: 2;
     grid-row: 4;
     background-image: url("../images/pink.jpg");
@@ -285,9 +312,9 @@ body {
     border-style: solid;
     min-width: 400px;
 
-}
+} */
 
-.box-7 {
+/* .box-7 {
     grid-column: 2;
     grid-row: 5;
     background-image: url("../images/goldenrod.jpg");
@@ -296,9 +323,9 @@ body {
     border-style: solid;
     min-width: 400px;
 
-}
+} */
 
-.box-8 {
+/* .box-8 {
     grid-column: 3;
     grid-row: 5;
     background-image: url("../images/lavender.jpg");
@@ -306,7 +333,7 @@ body {
     border-color: aqua;
     border-style: solid;
     min-width: 400px;
-}
+} */
 
 
 /* Footer Style Start */
@@ -326,8 +353,8 @@ footer {
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
-    grid-column: 1;
-    grid-row: 6;
+    /* grid-column: 1;
+    grid-row: 6; */
 }
 
 .box-10 {
