@@ -23,7 +23,6 @@ body {
     background-color: slategray;
     background-size: cover;
     color:  black;     
-    /* flex: static; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -47,14 +46,16 @@ body {
 
 .header nav ul a {
     display: inline-flex;
-    justify-content: flex-end;
-    flex-direction: left, bottom;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 .header nav {
     margin: 10px 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
     /* float: right;  */
 }
 
@@ -80,7 +81,7 @@ body {
 
 /* Hero Style Start */
 .hero {
-    height: 200px;
+    /* height: 200px; */
     width: auto;
     margin-bottom: 25px;
     background-image: url("../images/gray-shade.jpg");
@@ -92,6 +93,7 @@ body {
     /* flex Styling for Hero */
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .hero a {
@@ -102,29 +104,30 @@ body {
     background-color: slategray;
     left: 35%;
     top: 35%;
-    width: fit-content;
+    /* width: fit-content; */
     height: fit-content;
 }
 
 .hero img {
-    position: relative;
+    /* position: relative; */
     top: 5%;
     left: 1%;
-    margin-bottom: 25px;
+    margin: 15px;
     max-height: 150px;
+
 }
 
 .flex-left {
     /* float: left; */
     margin-right: 5%;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 
 .flex-right {
-    /* float: right; */
-    justify-content: right, bottom;
+    /* align-items: flex-end; */
+    /* justify-content: right, bottom; */
     margin-left: 5%;
-    position: static;
+    /* position: static; */
 }
 /* Hero Style Stop */
 
@@ -262,6 +265,14 @@ body {
     min-width: 400px;
 }
 
+
+/* Footer Style Start */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .box-9 {
     margin: 10px;
     padding: 0px 10px 0px 0px;
@@ -277,18 +288,19 @@ body {
 }
 
 .box-10 {
-    grid-column-start: 2;
+    /* grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 6;
-    position: relative;
+    position: relative; */
     padding-top: 4%;
+    justify-content: flex-start;
 }
 
 .box-10 nav {
     margin: 10px 30px;
     font-weight: lighter;
     font-size: 22px;
-    /* float: right; */
+    float: right;
 }
 
 .box-10 li {
@@ -306,8 +318,11 @@ body {
     padding: 2px 4px;
     font-weight: lighter;
     font-size: 15px;
-    float: middle;
+    /* float: middle; */
     /* display: inline; */
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 
 }
 
