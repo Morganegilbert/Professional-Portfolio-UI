@@ -147,6 +147,20 @@ body {
     /* flex-wrap: wrap;
     flex: auto; */
 }
+.flex-row {
+    display: flex;
+}
+
+.section-title {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.about-me-p {
+    text-align: center;
+}
 
 .box {
     grid-area: content;
