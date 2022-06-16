@@ -96,7 +96,7 @@ body {
 /* Header Style Stop */
 
 /* Hero Style Start */
-.hero {
+.hero-container {
     min-height: calc(100vh - 60vh);
     max-height: 20%;
     margin-bottom: 25px;
@@ -107,15 +107,16 @@ body {
 
     /* flex Styling for Hero */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.hero a {
+.hero-container a {
     margin: 15px;
     padding: 8px;
     color: white;
-    font-size: 20;
+    /* font-size: 25; */
     background-color: slategray;
     left: 35%;
     top: 35%;
@@ -123,7 +124,7 @@ body {
     height: fit-content;
 }
 
-.hero img {
+.hero-container img {
     /* position: relative; */
     top: 5%;
     left: 1%;
@@ -422,6 +423,10 @@ body {
     font-size: 22px;
     /* float: right; */
     flex: 1;
+}
+
+.contact-me-list ul a {
+    justify-content: space-between;
 }
 
 /* .box-10 li {
