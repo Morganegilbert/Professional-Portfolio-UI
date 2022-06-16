@@ -185,7 +185,7 @@ body {
 }
 
 .about-me-container p {
-    text-align: center;
+    text-align: justify;
     font-size: 26px;
     padding: 0 20px 0;
     line-height: 1.5;
@@ -243,7 +243,7 @@ body {
 }
 
 .work-container .work-container div .work-container div {
-background-color: orange;
+background-color: aqua;
 align-self: flex-end;
 min-height: 17vh;
 flex: 0 0 300px;
