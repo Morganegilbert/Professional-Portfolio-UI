@@ -366,13 +366,17 @@ body {
 
 
 /* Footer Style Start */
-footer {
+.contact-me {
+    min-height: 2vh;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
 }
 
-.box-9 {
+.contact-me nav {
     margin: 10px;
     padding: 0px 10px 0px 0px;
     /* flex: 1; */
@@ -382,11 +386,13 @@ footer {
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
+    order: -1;
+    flex: 0 0 20vw;
     /* grid-column: 1;
     grid-row: 6; */
 }
 
-.box-10 {
+.contact-me li {
     /* grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 6;
