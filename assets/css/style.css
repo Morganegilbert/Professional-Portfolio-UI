@@ -235,9 +235,59 @@ body {
 }
 
 .work-container .work-container div {
-    background-color: skyblue;
+    /* background-image: url("../images/gray-shade.jpg"); */
+    /* background-color: aqua; */
+    background-repeat: none;
+    background-position: center;
+    background-size: 50%;
 }
 
+.work-container .work-container div .work-container div {
+background-color: orange;
+align-self: flex-end;
+min-height: 17vh;
+flex: 0 0 300px;
+}
+
+.surf-report {
+    background-image: url("../images/orange.jpg");
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    max-width: none;
+}
+
+.led-wall {
+    background-image: url("../images/puppies.jpg");
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    max-width: none;
+}
+
+.calculator {
+    background-image: url("../images/pink.jpg");
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    max-width: none;
+}
+
+.pastel-puzzles {
+    background-image: url("../images/goldenrod.jpg");
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    max-width: none;
+}
+
+.run-buddy {
+    background-image: url("../images/lavender.jpg");
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    max-width: none;
+}
 /* .work nav {
     flex: 1 20%;
     flex-shrink: inherit;
