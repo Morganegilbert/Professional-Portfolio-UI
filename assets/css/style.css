@@ -195,6 +195,19 @@ body {
 
 
 .work {
+    /* Flex Style */
+    display: flex;
+    flex: 1;
+    min-height: calc(100vh - 40vh);
+    flex-direction: row;
+    justify-content: start;
+    padding: 8px;
+}
+
+.work nav {
+    flex: 1 20%;
+    flex-shrink: inherit;
+    padding-right: 5px;
     width: 500px;
     text-align: right;
     font-size: 40px;
@@ -202,13 +215,6 @@ body {
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
-    flex: 1;
-}
-
-.work h3 {
-    flex: 1 20%;
-    flex-shrink: inherit;
-    padding-right: 5px;
 }
 
 .subsection1-title {
