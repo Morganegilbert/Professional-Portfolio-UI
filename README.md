@@ -29,7 +29,7 @@
 #### Includes five links: Phone number (will call on click), email (will pull up email on click), GitHub (directs to my GitHub), Twitter (do not have a twitter, so sends to main Twitter page), and Spotify (alsp do not have a spotify, will send to main Spotify page)
 
 # Screenshot Below:
-![Challenge Demo Screenshot](./assets/images/demo.png "Challenge Demo")
+![Professional Portfolio Screenshot](./assets/images/demo.jpg "Professional Portfolio Screenshot")
 <br>
 <br>
 
