@@ -205,8 +205,8 @@ body {
 }
 
 .work nav {
-    flex: 1 20%;
-    flex-shrink: inherit;
+    /* flex: 1 20%; */
+    /* flex-shrink: inherit; */
     padding-right: 5px;
     width: 500px;
     text-align: right;
@@ -215,14 +215,36 @@ body {
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
+    order: -1;
+    flex: 0 0 20vw;
 }
 
-.subsection1-title {
-    flex: 12;
+.work .box {
+    background-image: url("../images/orange.jpg");
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    max-width: none;
+
 }
 
-.subsection2-title {
-    flex: 6;
+.work .box div {
+    width: 500px;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.work .box div > .surf-report {
+    align-self: flex-end;
+    min-height: 18vh;
+}
+.work .box > .led-wall, .calculator, .pastel-puzzles, .run-buddy {
+    align-self: flex-end;
+    min-height: 17vh;
+    /* min-width: fit-content; */
+    flex: 0 0 300px;
+    background-color: skyblue;
 }
 
 /* .box {
