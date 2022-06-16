@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
     <head>
         <title>Professional Portfolio - Morgan Gilbert</title>
         <meta charset="UTF-8" />
         <!-- <meta name="viewport" content="width=device=width, initial scale=1" /> -->
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-
     </head>
+
     <body class="body">
         <!-- Header-->
         <div class="header-container">
@@ -22,11 +23,11 @@
                         <ul>
                             <!-- List item element -->
                       
-                            <a href="#box-1"> About Me </a>
+                            <a href="#about-me-container"> About Me </a>
                        
-                            <a href="#box-3"> Work </a>
+                            <a href="#work-container"> Work </a>
                         
-                            <a href="#contact-me"> Contact Me </a>
+                            <a href="#contact-me-container"> Contact Me </a>
                             <!-- Need to Add Resume Link - No updated resume yet -->
                             <a>
                                 <span class="resume">Resume</span>
@@ -56,7 +57,7 @@
         </div>
 
         <!-- Main Section -->
-        <div class="about-me-container">
+        <div id="about-me-container" class="about-me-container">
                 <nav>
                     <p>
                         About 
@@ -77,7 +78,7 @@
             <!-- <div class="box-1">About Me</div> -->
             <!-- <div class="box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, enim sint debitis earum corporis quis sit itaque. Consequuntur consequatur facilis at corporis repudiandae animi unde cum, quo praesentium aliquam architecto.</div> -->
             
-        <div class="work-container">
+        <div id="work-container" class="work-container">
                 <nav>
                     <p>
                         Work
@@ -120,9 +121,15 @@
                                 </div>                    
                             </div>
                             <div>
-                                <div class="work-container run-buddy">
-                                    <a href="https://morganegilbert.github.io/run-buddy/" alt="Run Buddy URL">Run Buddy</a>
-                                </div>                    
+                                <a href="https://morganegilbert.github.io/run-buddy/" alt="Run Buddy URL">
+                                    <div class="work-container run-buddy">
+                                        <div>Run Buddy
+                                            <p>
+                                                html
+                                            </p>
+                                        </div>
+                                    </div>   
+                                </a>                 
                             </div>
                         </div>
                     </div>
@@ -130,7 +137,7 @@
         </div>
 
             <!-- Footer-->  
-        <div class="contact-me-container"> 
+        <div id="contact-me-container" class="contact-me-container"> 
             <!-- Nav -->
             <nav>
                 <p>

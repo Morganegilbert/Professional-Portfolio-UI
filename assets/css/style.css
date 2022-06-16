@@ -221,7 +221,7 @@ body {
 
 .work-container p {
     text-align: center;
-    font-size: 26px;
+    font-size: 30px;
     padding: 0 20px 0;
     line-height: 1.5;
     color: black;
@@ -237,9 +237,18 @@ body {
 .work-container .work-container div {
     /* background-image: url("../images/gray-shade.jpg"); */
     /* background-color: aqua; */
+    font-size: 25px;
     background-repeat: none;
     background-position: center;
     background-size: 50%;
+    /* box-shadow: inset 0 0 1px 3px gray; */
+    filter: brightness(90%);
+    text-decoration: none;
+}
+
+.work-container .work-container div:hover {
+    /* box-shadow: none; */
+    filter: brightness(100%)
 }
 
 .work-container .work-container div .work-container div {
@@ -248,13 +257,20 @@ body {
     min-height: 10vh;
     flex: 0 0 300px;
 }
+.run-buddy div p {
+    font-size: 15px;
+    list-style: none;
+}
 
-.work-container .work-container div .work-container a {
+
+/* .work-container .work-container div .work-container a {
     background-color: aqua;
     align-self: flex-end;
     min-height: 10vh;
     flex: 0 0 300px;
-    }
+    box-shadow: 8px -12px 2px 1px slategray;
+    filter: brightness(90%)
+    } */
 
 .surf-report {
     background-image: url("../images/orange.jpg");
