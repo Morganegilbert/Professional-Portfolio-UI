@@ -243,11 +243,18 @@ body {
 }
 
 .work-container .work-container div .work-container div {
-background-color: aqua;
-align-self: flex-end;
-min-height: 17vh;
-flex: 0 0 300px;
+    background-color: aqua;
+    align-self: flex-end;
+    min-height: 10vh;
+    flex: 0 0 300px;
 }
+
+.work-container .work-container div .work-container a {
+    background-color: aqua;
+    align-self: flex-end;
+    min-height: 10vh;
+    flex: 0 0 300px;
+    }
 
 .surf-report {
     background-image: url("../images/orange.jpg");
@@ -266,7 +273,7 @@ flex: 0 0 300px;
 }
 
 .calculator {
-    background-image: url("../images/pink.jpg");
+    background-image: url("../images/mia.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
@@ -274,7 +281,7 @@ flex: 0 0 300px;
 }
 
 .pastel-puzzles {
-    background-image: url("../images/goldenrod.jpg");
+    background-image: url("../images/leo.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
@@ -288,6 +295,8 @@ flex: 0 0 300px;
     border-style: solid;
     max-width: none;
 }
+
+
 /* .work nav {
     flex: 1 20%;
     flex-shrink: inherit;
