@@ -392,27 +392,28 @@ body {
     grid-row: 6; */
 }
 
-.contact-me li {
-    /* grid-column-start: 2;
+/* .contact-me li {
+    grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 6;
-    position: relative; */
+    position: relative;
     padding-top: 4%;
     justify-content: flex-start;
-}
+} */
 
-.box-10 nav {
+.contact-me-list ul {
     margin: 10px 30px;
     font-weight: lighter;
     font-size: 22px;
-    float: right;
+    /* float: right; */
+    flex: 1;
 }
 
-.box-10 li {
+/* .box-10 li {
     display: inline;
     padding:  6%;
     float: none;
-    /* top: 6%; */
+    top: 6%;
     position: sticky;
     bottom: 37%;
 }
@@ -423,16 +424,27 @@ body {
     padding: 2px 4px;
     font-weight: lighter;
     font-size: 15px;
-    /* float: middle; */
-    /* display: inline; */
+    float: middle;
+    display: inline;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 
-}
+} */
 
 
-.box-10 li a:hover {
+.contact-me-list ul a:hover {
     background-color: rgba(67, 69, 70, 0.26);
 }
 /* Footer Style Stop */
+
+/* Additional Styling */
+
+/* Aside Style */
+aside {
+    flex: 0 0 10vw;
+}
+
+article {
+    flex: 1;
+}
