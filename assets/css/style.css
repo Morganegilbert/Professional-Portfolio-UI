@@ -83,13 +83,12 @@ body {
 
 /* Hero Style Start */
 .hero {
-    /* height: 200px; */
-    width: auto;
+    min-height: calc(100vh - 60vh);
+    max-height: 20%;
     margin-bottom: 25px;
     background-image: url("../images/gray-shade.jpg");
     background-size: cover;
     background-position: center;
-    /* position: relative; */
     max-height: auto;
 
     /* flex Styling for Hero */
@@ -115,42 +114,51 @@ body {
     top: 5%;
     left: 1%;
     margin: 15px;
-    max-height: 150px;
+    max-height: 200px;
 
 }
 
-.flex-left {
+/* .flex-left { */
     /* float: left; */
-    margin-right: 5%;
+    /* margin-right: 5%; */
     /* justify-content: flex-start; */
-}
+/* } */
 
-.flex-right {
-    /* align-items: flex-end; */
-    /* justify-content: right, bottom; */
+/* .flex-right {
+    align-items: flex-end;
+    justify-content: right, bottom;
     margin-left: 5%;
-    /* position: static; */
-}
+    position: static;
+} */
 /* Hero Style Stop */
 
 
 /* Main Style Start */
 
-.main {
+.about-me {
     margin: 0;
     width: 100%;
     height: 1000px;
-    display: grid; 
-    /* justify-content: center;
-    grid-gap: 20px;
-    grid-template-columns: 19.25% 34% 34% 9.25%;
-    grid-template-rows: 200px repeat(autofill, 150px) 200px; */
+    display: flex; 
+    min-height: calc(100vh - 40vh);
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;    
+    border-right: 5px;
+    border-right-color: aqua;
+    border-right-style: solid;    
+    /* justify-content: center; */
     color: black;
+    padding: 5px;
     /* flex-wrap: wrap;
     flex: auto; */
 }
-.flex-row {
-    display: flex;
+.about-me nav {
+    display: flex;    
+    flex: 1 20%;
+    flex-shrink: inherit;
 }
 
 .section-title {
@@ -160,17 +168,6 @@ body {
     width: 20%;
 }
 
-.about-me {
-    /* margin: 10px;
-    padding: 0 10px 0 25%; */
-    text-align: right;
-    font-size: 40px;
-    font-weight: bold;
-    border-right: 5px;
-    border-right-color: aqua;
-    border-right-style: solid;
-    /* justify-content: flex-start; */
-}
 .about-me-p {
     text-align: center;
     font-size: 26px;
@@ -179,11 +176,6 @@ body {
     color: black;
     flex: 2 80%;
     flex-grow: inherit;
-}
-
-.about-me h2 { 
-    flex: 1 20%;
-    flex-shrink: inherit;
 }
 
 .about {
@@ -195,19 +187,22 @@ body {
     justify-content: space-between;
 }
 
+
 .work {
-    width: ;
+    width: 500px;
     text-align: right;
     font-size: 40px;
     font-weight: bold;
     border-right: 5px;
     border-right-color: aqua;
     border-right-style: solid;
+    flex: 1;
 }
 
 .work h3 {
     flex: 1 20%;
     flex-shrink: inherit;
+    padding-right: 5px;
 }
 
 .subsection1-title {
