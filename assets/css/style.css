@@ -238,7 +238,8 @@ body {
     /* background-image: url("../images/gray-shade.jpg"); */
     /* background-color: aqua; */
     font-size: 25px;
-    background-repeat: none;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
     /* box-shadow: inset 0 0 1px 3px gray; */
@@ -273,7 +274,7 @@ body {
     } */
 
 .surf-report {
-    background-image: url("../images/orange.jpg");
+    background-image: url("../images/scenery.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
@@ -281,7 +282,7 @@ body {
 }
 
 .led-wall {
-    background-image: url("../images/puppies.jpg");
+    background-image: url("../images/Winston.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
