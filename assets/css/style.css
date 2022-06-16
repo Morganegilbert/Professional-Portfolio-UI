@@ -448,3 +448,18 @@ aside {
 article {
     flex: 1;
 }
+
+@media screen and (max-device-width: 900px) {
+    .picture {
+        flex-direction: column;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .work {
+        flex-direction: column;
+    }
+    .contact-me {
+        flex-direction: column;
+    }
+}
