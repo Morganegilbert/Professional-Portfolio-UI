@@ -1,8 +1,7 @@
 /* Box Sytle Start */
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
     /* flex: 1 100%; */
 }
 
@@ -14,39 +13,55 @@ body {
     /* flex-flow: row wrap; */
     flex-direction: column;
     line-height: normal;
+    /* padding: 0; */
+    margin: 0;
 }
 /* Body Style Stop */
 
 /* Header Style Start */
-.header {
+
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-container header{
+    /* flex-direction: row; */
+    flex: 1;
+    background-color: gray;
+}
+
+.header-container div {
+    flex: 1;
+}
+
+.header-container div .header-container div h1 {
     padding: 10px;
-    width: auto;
+    width: 30%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: slategray;
     background-size: cover;
-    color:  black;     
+    color:  black;
+    /* justify-content: space-between; */
+    /* flex-wrap: column; */
+}
+
+.header-container h1 .M {
+    color: rgb(49, 63, 109);
+}
+
+.header-container h1 .G {
+    color: rgb(49, 63, 109);
+}
+
+.header-link-list {
+    justify-content: center;
+    align-self: center;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: column;
 }
 
-.header h1 {
-    /* display: inline-block; */
-    justify-content: flex-start;
-    font-size: 40px;
-    padding: 0px 20px 5px 40px;
-    background-color: rgba(255, 255, 255, 0.507);
-}
-
-.header h1 .M {
-    color: rgb(49, 63, 109);
-}
-
-.header h1 .G {
-    color: rgb(49, 63, 109);
-}
-
-.header nav ul a {
+.header-container nav ul a {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -54,21 +69,20 @@ body {
     list-style: none;
 }
 
-.header nav {
+.header-container ul {
     margin: 10px 30px;
     font-weight: lighter;
     font-size: 25px;
-    /* float: right;  */
 }
 
-.header a {
+.header-container a {
     text-decoration: underline;
     color: aliceblue;
     padding: 0 10px 0 10px;
     cursor: pointer;
 }
 
-.header a:hover {
+.header-container a:hover {
     background-color: rgba(204, 205, 206, 0.26);
 }
 
@@ -207,8 +221,9 @@ body {
 .work nav {
     /* flex: 1 20%; */
     /* flex-shrink: inherit; */
+    margin-right: 20px;
     padding-right: 5px;
-    width: 500px;
+    /* width: 500px; */
     text-align: right;
     font-size: 40px;
     font-weight: bold;
