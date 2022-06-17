@@ -38,12 +38,13 @@ body {
 }
 
 .header-container div .header-container div h1 {
-    background-color: slategray;
+    background-color: rgb(107, 175, 207);
     background-size: cover;
     color:  black;    
+    font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
-    width: 30%;
+    width: 34%;
 }
 
 .header-container h1 .M {
@@ -78,7 +79,7 @@ body {
 
 .header-container a {
     color: aliceblue;  
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding: 0 10px 0 10px;
     cursor: pointer;
 }
@@ -101,7 +102,7 @@ body {
     background-image: url("../images/gray-shade.jpg");
     background-size: cover;
     background-position: center;    
-    /* max-height: auto; */
+    max-height: auto;
     min-height: calc(100vh - 60vh);
     max-height: 5%;
     margin-bottom: 25px;
@@ -275,7 +276,7 @@ body {
     max-width: none;
 }
 
-.run-buddy {
+.horiseon {
     background-image: url("../images/lavender.jpg");
     border: 5px;
     border-color: aqua;
@@ -332,15 +333,15 @@ body {
     flex: 1;
 }
 
-.contact-me-container ul a:hover {
-    background-color: rgba(67, 69, 70, 0.26);
+.contact-me-container article .contact-me-container a:hover {
+    background-color: rgba(67, 69, 70, 0.377);
 }
 
 .contact-me-container a {
     color: black;  
     font-size: 25px;
-    text-decoration: underline;
-    padding: 0 10px 0 10px;
+    /* text-decoration: underline; */
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -378,4 +379,6 @@ article {
         flex-direction: column;
     }
 }
+
+
 /* End Styles */
