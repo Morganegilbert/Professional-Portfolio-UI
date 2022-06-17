@@ -285,7 +285,7 @@ body {
 
 /* Footer Style Start */
 .contact-me-container {
-    min-height: calc(100vh - 50vh);
+    min-height: calc(100vh - 60vh);
     margin-top: 40px;
 
     /* Flex Style */
@@ -323,7 +323,7 @@ body {
 }
 
 .contact-me-container div {
-    align-self: center;
+    text-align: center;
     padding-left: 1%; 
     /* Flex Style */
     flex: 1;
