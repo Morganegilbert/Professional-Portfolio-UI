@@ -19,8 +19,6 @@ body {
 /* Body Style Stop */
 
 /* Header Style Start */
-
-
 .header-container {
     /* Flex Style */
     display: flex;
@@ -40,7 +38,6 @@ body {
 }
 
 .header-container div .header-container div h1 {
-
     background-color: slategray;
     background-size: cover;
     color:  black;    
@@ -188,24 +185,28 @@ body {
 .work-container nav {
     border-right: 5px;
     border-right: aqua solid;
+
+    /* flex Style */
     flex: 0 0 20vw;   
     order: -1;
 }
 
 .work-container nav p {
-    padding-right: 25px;
     text-align: right;
     font-size: 40px;
-    font-weight: bold; 
+    font-weight: bold;     
+    padding-right: 25px;
     margin-top: 0;
 }
 
 .work-container p {
-    text-align: center;
+    color: black;      
     font-size: 30px;
+    line-height: 1.5;    
+    text-align: center;
     padding: 0 20px 0;
-    line-height: 1.5;
-    color: black;
+
+    /* flex Style */
     flex: 1;
 }
 
@@ -231,8 +232,10 @@ body {
 
 .work-container .work-container div .work-container div {
     background-color: aqua;
+    min-height: 10vh;    
+
+    /* flex Style */
     align-self: flex-end;
-    min-height: 10vh;
     flex: 0 0 300px;
 }
 .work-container div p {
@@ -284,8 +287,8 @@ body {
 
 /* Footer Style Start */
 .contact-me-container {
-    min-height: calc(100vh - 50vh);
     align-items: center;
+    min-height: calc(100vh - 50vh);
 
     /* Flex Style */
     flex-direction: row;
@@ -303,19 +306,19 @@ body {
 }
 
 .contact-me-container nav p {
-    margin-left: 25px;
     text-align: right;
     font-size: 40px;
-    font-weight: bold; 
+    font-weight: bold;
+    margin-left: 25px;
     margin-top: 0;
 }
 
 .contact-me-container p {
-    text-align: center;
-    font-size: 26px;
-    padding: 0 20px 0;
-    line-height: 1.5;
     color: black;
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 20px 0;
 
     /* Flex Style */
     flex: 1;
@@ -323,14 +326,27 @@ body {
 
 .contact-me-container div {
     align-self: center;
-    padding-left: 5%; 
+    /* justify-items: center; */
+    padding-left: 1%; 
     /* Flex Style */
     flex: 1;
 }
 
-.contact-me-list ul a:hover {
+.contact-me-container ul a:hover {
     background-color: rgba(67, 69, 70, 0.26);
 }
+
+.contact-me-container a {
+    color: black;  
+    font-size: 25px;
+    text-decoration: underline;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+/* .header-container a:hover {
+    background-color: rgba(204, 205, 206, 0.26);
+} */
 /* Footer Style Stop */
 
 
