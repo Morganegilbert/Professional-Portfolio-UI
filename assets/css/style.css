@@ -277,7 +277,7 @@ body {
 }
 
 .horiseon {
-    background-image: url("../images/lavender.jpg");
+    background-image: url("../images/horiseon.jpg");
     border: 5px;
     border-color: aqua;
     border-style: solid;
@@ -334,7 +334,7 @@ body {
 }
 
 .contact-me-container article .contact-me-container a:hover {
-    background-color: rgba(67, 69, 70, 0.377);
+    background-color: rgba(67, 69, 70, 0.664);
 }
 
 .contact-me-container a {
