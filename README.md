@@ -3,7 +3,12 @@
 ## Professional Portfolio - UI
 <br>
 
-### Within this website, there are four main areas: Header, Hero, About, Work, and Footer 
+### Within this website, there are four main areas: 
+* Header
+* Hero
+* About
+* Work
+* Footer 
 
 ### 1st. The Header:
 #### Horiseon (Which includes navigation links to the three focuses under Hero and resume link - which is still in progress, so no link yet)
@@ -31,7 +36,7 @@
 * email (will pull up email on click)
 * GitHub (directs to my GitHub)
 * Twitter (do not have a twitter, so sends to main Twitter page)
-* and Spotify (alsp do not have a spotify, will send to main Spotify page)
+* and Spotify (also do not have a spotify, will send to main Spotify page)
 
 # Screenshot Below:
 ![Professional Portfolio Screenshot](./assets/images/demo.jpg "Professional Portfolio Screenshot")
