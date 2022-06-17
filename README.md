@@ -21,7 +21,7 @@
 
 ### 4th. Work:
 #### 4 sections of filler since not enough projects yet to fill space
-#### Last section is for Run-Buddy which is still in progress and needs lots of work
+#### Last section is for Horiseon (did not add Run Buddy since it is still very much a work in progress...)
 <br>
 
 ### 5th. Footer:

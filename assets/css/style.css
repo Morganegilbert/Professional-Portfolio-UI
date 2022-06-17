@@ -1,8 +1,6 @@
 /* Box Sytle Start */
 *{
     box-sizing: border-box;
-
-    /* flex: 1 100%; */
 }
 
 /* Body Style Start */
@@ -68,7 +66,6 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
 }
 
 .header-container ul {
@@ -79,7 +76,7 @@ body {
 
 .header-container a {
     color: aliceblue;  
-    /* text-decoration: underline; */
+    text-decoration: underline aqua;
     padding: 0 10px 0 10px;
     cursor: pointer;
 }
@@ -130,12 +127,10 @@ body {
     margin: 15px;
     max-height: 300px;
 }
-
 /* Hero Style Stop */
 
 
-/* Main Style Start */
-
+/* About Style Start */
 .about-me-container {
     min-height: calc(100vh - 70vh);
     margin-bottom: 20px;    
@@ -172,6 +167,8 @@ body {
     /* Flex Style */
     flex: 1;
 }
+/* About Style End */
+
 
 /* Work Section */
 .work-container {
@@ -217,6 +214,10 @@ body {
     padding: 4px;
 }
 
+.work-container div p {
+    font-size: 15px;
+}
+
 .work-container .work-container div {
     font-size: 25px;
     text-decoration: none;
@@ -238,10 +239,6 @@ body {
     /* flex Style */
     align-self: flex-end;
     flex: 0 0 300px;
-}
-.work-container div p {
-    font-size: 15px;
-    list-style: none;
 }
 
 .surf-report {
@@ -288,8 +285,8 @@ body {
 
 /* Footer Style Start */
 .contact-me-container {
-    align-items: center;
     min-height: calc(100vh - 50vh);
+    margin-top: 40px;
 
     /* Flex Style */
     flex-direction: row;
@@ -327,7 +324,6 @@ body {
 
 .contact-me-container div {
     align-self: center;
-    /* justify-items: center; */
     padding-left: 1%; 
     /* Flex Style */
     flex: 1;
@@ -340,14 +336,10 @@ body {
 .contact-me-container a {
     color: black;  
     font-size: 25px;
-    /* text-decoration: underline; */
+    text-decoration: underline aqua;
     padding: 10px;
     cursor: pointer;
 }
-
-/* .header-container a:hover {
-    background-color: rgba(204, 205, 206, 0.26);
-} */
 /* Footer Style Stop */
 
 
@@ -361,7 +353,9 @@ aside {
 article {
     flex: 1;
 }
+/* Aside Style End */
 
+/* Media Style */
 @media screen and (max-device-width: 900px) {
     .header-container {
         flex-direction: column;
@@ -379,6 +373,7 @@ article {
         flex-direction: column;
     }
 }
+/* Media Style End */
 
 
 /* End Styles */
