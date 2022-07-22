@@ -241,12 +241,8 @@ body {
     flex: 0 0 300px;
 }
 
-.surf-report {
-    background-image: url("../images/scenery.jpg");
-    border: 5px;
-    border-color: aqua;
-    border-style: solid;
-    max-width: none;
+.diy-bartender {
+    background-image: url(../images/diy-bartender.jpg) !important;
 }
 
 .led-wall {
