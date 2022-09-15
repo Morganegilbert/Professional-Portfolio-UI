@@ -245,6 +245,14 @@ body {
     background-image: url(../images/diy-bartender.jpg) !important;
 }
 
+.pawfect-friends {
+    background-image: url(../images/pawfect-friends.jpg) !important;
+    border: 5px;
+    border-color: aqua;
+    border-style: solid;
+    max-width: none;
+}
+
 .led-wall {
     background-image: url("../images/Winston.jpg");
     border: 5px;
